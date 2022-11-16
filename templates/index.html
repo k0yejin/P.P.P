@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Purple People Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     <script src="../static/js/api.js"></script>
     <script src="../static/js/app.js"></script>
     <link rel="stylesheet" href="../static/css/styles.css"/>
@@ -79,12 +84,74 @@
     </ul>
 </section>
 
+<<<<<<< Updated upstream
 <section class="comments">
+=======
+>>>>>>> Stashed changes
 
-        <h3 class="comm_txt">방명록 남기기</h3>
-        <i class="ico_down"></i>
+<div class="guestBook">
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" onclick="open_box()">흔적 남기기</button>
+    </div>
+    <div class="comments" id="comment-box">
+        <div class="mypost">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="guestName" placeholder="url">
+                <label for="guestName">nickname</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="guestMbti" placeholder="url">
+                <label for="guestMbti">mbti</label>
+            </div>
+            <div class="form-floating">
+<textarea class="form-control" placeholder="Leave a comment here" id="guestComment"
+          style="height: 100px"></textarea>
+                <label for="guestComment">방명록</label>
+            </div>
+            <div class="postBt">
+                <button onclick="save_comment()" type="button" class="btn btn-dark">흔적 남기기</button>
+            </div>
 
+        </div>
+        <div class="comm-list" id="comm-list">
+            <div class="card">
+                <blockquote class="blockquote">
+                    <p>와 정말 좋아요 </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    intp <cite title="Source Title">김철수</cite>
+                </figcaption>
+            </div>
+            <div class="card">
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    enfp <cite title="Source Title">박명수</cite>
+                </figcaption>
+            </div>
+            <div class="card">
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </div>
+        </div>
+        <!--<i class="ico_down"></i>-->
+        <div class="closeBt">
+            <button  onclick="close_box()" type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+
+    </div>
+
+</div>
+
+<<<<<<< Updated upstream
 </section>
+=======
+>>>>>>> Stashed changes
 
 <section class="join">
     <input
@@ -108,6 +175,17 @@
     </article>
     <article class="request">
         <ul id="name_box">
+<<<<<<< Updated upstream
+=======
+            <!--            <li class="req_member">-->
+            <!--                Changmin-->
+            <!--                <div class="wait_box">승인 대기중</div>-->
+            <!--            </li>-->
+            <!--            <li class="req_member">-->
+            <!--                Younghoon-->
+            <!--                <div class="wait_box">승인 대기중</div>-->
+            <!--            </li>-->
+>>>>>>> Stashed changes
         </ul>
     </article>
 </section>
